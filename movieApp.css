@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #1d2b3a;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.movieForm {
+    min-height: 200px;
+}
+.submit {
+    background-color: black ;
+    color: #00dfc4;;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    border-color: white;
+    margin-left: absolute;
+    margin-top: absolute;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    text-shadow: black 10px -8px 20px,
+                black -10px 8px 20px;
+    font-weight: 100;
+    color: #00dfc4;
+    margin: 5px;
+}
+
+th {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    -webkit-text-stroke: 1px #282828;
+}
+
+.tableList {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 1500px;
+    border-radius: 5px 5px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.tableList thead tr {
+    background: #00dfc4;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tableList th, .tableList td {
+    padding: 8px 10px;
+}
+
+.tableList tbody tr{
+    border-bottom: 2px solid  #00dfc4;
+    font-size: 1em;
+    font-weight: 100;
+    color: #00dfc4;
+}
+
+.inputBox {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 250px;
+    text-align: center;
+}
+.inputBox input {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0,25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #00dfc4;
+    font-size: 1em;
+    }
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0,25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1 px solid #00dfc4;
+    border-right: 1 px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span {
+    background-color: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #00dfc4;
+}
+
+.deleteBtn {
+    background-color: black ;
+    color: #00dfc4;;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    border-color: white;
+}
